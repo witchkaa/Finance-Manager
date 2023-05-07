@@ -6,6 +6,7 @@ import java.util.Set;
 public class User {
     HashMap<String, Double> incomes;
     HashMap<String, Double> expenses;
+    double budget;
     public void writeIncomes() throws IOException {
         ObjectOutputStream oos = new ObjectOutputStream( new FileOutputStream("incomesComment"));
         Set<String> incomesCommentsSet = incomes.keySet();
@@ -56,5 +57,24 @@ public class User {
         }
         ois.close();
         this.incomes = incomes;
+    }
+    public void readBudget() throws IOException, ClassNotFoundException {
+        ObjectInputStream ois = new ObjectInputStream(new FileInputStream("budget.txt"));
+        this.budget = (double) ois.readObject();
+    }
+    public void writeBudget() throws IOException {
+        ObjectOutputStream oos = new ObjectOutputStream( new FileOutputStream("budget"));
+        oos.writeObject(budget);
+        oos.flush();
+        oos.close();
+    }
+    public void showBudget() {
+        System.out.println("Your current budget is " + budget);
+    }
+    public void showIncomes() {
+        System.out.println("Your planned incomes: \n" + incomes.toString());
+    }
+    public void showExpenses() {
+        System.out.println("Your planned expenses: \n" + expenses.toString());
     }
 }
