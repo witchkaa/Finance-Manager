@@ -4,9 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a47500b5-09e8-4099-87c8-cec65dd12c68" name="Changes" comment="Init commit">
+    <list default="true" id="a47500b5-09e8-4099-87c8-cec65dd12c68" name="Changes" comment="Add functionality">
+      <change afterPath="$PROJECT_DIR$/src/Asker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BudgetViewer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ExpensesViewer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IncomesViewer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TransactionViewer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UserChoice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UserChoiceBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Expense.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Expense.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Income.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Income.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TransactionBuilder.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +59,10 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -60,7 +78,15 @@
       <workItem from="1683292679549" duration="751000" />
       <workItem from="1683360978380" duration="623000" />
       <workItem from="1683368951317" duration="1193000" />
-      <workItem from="1683474521728" duration="721000" />
+      <workItem from="1683474521728" duration="2580000" />
+      <workItem from="1683490398244" duration="31000" />
+      <workItem from="1683748824155" duration="704000" />
+      <workItem from="1683749587965" duration="814000" />
+      <workItem from="1683829111024" duration="405000" />
+      <workItem from="1683836135981" duration="337000" />
+      <workItem from="1683836550439" duration="1661000" />
+      <workItem from="1683984181525" duration="369000" />
+      <workItem from="1684154702923" duration="892000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1683237589543</created>
@@ -69,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683237589543</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add functionality">
+      <created>1683481311151</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683481311151</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -88,6 +121,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init commit" />
+    <MESSAGE value="Add functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add functionality" />
   </component>
 </project>

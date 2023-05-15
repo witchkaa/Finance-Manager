@@ -1,18 +1,14 @@
-public class Income<String, Double> implements Transaction{
-    Double amount;
+public class Income implements Transaction{
+    double amount;
     String comment;
-    @Override
-    public void viewTransactions() {
 
+    public Income(double amount, String comment) {
+        this.amount = amount;
+        this.comment = comment;
     }
 
     @Override
-    public void addTransaction() {
-
-    }
-
-    @Override
-    public void processTransaction() {
+    public void view() {
 
     }
 }
