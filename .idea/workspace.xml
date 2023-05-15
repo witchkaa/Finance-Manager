@@ -4,24 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a47500b5-09e8-4099-87c8-cec65dd12c68" name="Changes" comment="Add functionality">
-      <change afterPath="$PROJECT_DIR$/src/Asker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BudgetViewer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ExpensesViewer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IncomesViewer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TransactionViewer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UserChoice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UserChoiceBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img_1.png" afterDir="false" />
+    <list default="true" id="a47500b5-09e8-4099-87c8-cec65dd12c68" name="Changes" comment="Refactor using patterns. Add folders">
+      <change afterPath="$PROJECT_DIR$/src/logic/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/storage/StorageProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/storage/StorageRuntimeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/storage/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/storage/user.ser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/userinterface/Console.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/userinterface/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/userinterface/UserInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Expense.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Expense.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Income.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Income.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TransactionBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,12 +24,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -50,22 +48,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -86,7 +85,7 @@
       <workItem from="1683836135981" duration="337000" />
       <workItem from="1683836550439" duration="1661000" />
       <workItem from="1683984181525" duration="369000" />
-      <workItem from="1684154702923" duration="892000" />
+      <workItem from="1684154702923" duration="7418000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1683237589543</created>
@@ -102,7 +101,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683481311151</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add README.md">
+      <created>1684155650082</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1684155650082</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Refactor using patterns. Add folders">
+      <created>1684155929594</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684155929594</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,6 +135,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init commit" />
     <MESSAGE value="Add functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add functionality" />
+    <MESSAGE value="Add README.md" />
+    <MESSAGE value="Refactor using patterns. Add folders" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor using patterns. Add folders" />
   </component>
 </project>
