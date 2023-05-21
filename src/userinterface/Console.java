@@ -9,9 +9,14 @@ public class Console implements UserInterface {
     }
 
     @Override
-    public Object askInfo() {
+    public Object askInfo(String type) {
         Scanner scan = new Scanner(System.in);
-        Object res = scan.next();
+        Object res = null;
+        if(type == "int") {
+            res = scan.nextInt();
+        } else if(type == "string") {
+            res = scan.nextLine();
+        }
         scan.close();
         return res;
     }
@@ -20,8 +25,8 @@ public class Console implements UserInterface {
     public int showSuggestions() {
         System.out.println("""
                 Choose what would you like to do:
-                \tview planned expenses - press '1'
-                \tview planned incomes - press '2'
+                \tview planned incomes - press '1'
+                \tview planned expenses - press '2'
                 \tview current budget - press '3'
                 \tadd expense - press '4'
                 \tadd income - press '5'
@@ -29,7 +34,7 @@ public class Console implements UserInterface {
                 \tremove income - press '7'
                 \tmark expense as done - press '8'
                 \tmark income as done - press '9'
-                \tview income/expense ratio - press '10'
+                \tquick budget change - press '10'
                 """);
         Scanner scan = new Scanner(System.in);
         int choice = scan.nextInt();

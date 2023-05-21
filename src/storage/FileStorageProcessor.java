@@ -8,13 +8,13 @@ import java.util.HashMap;
 public class FileStorageProcessor implements StorageProcessor{
     User user;
     UserInterface userInterface;
-
+    private static final String PATH  = "\\user.ser";
     public FileStorageProcessor(UserInterface userInterface) {
         this.userInterface = userInterface;
     }
 
-    public void serialize(User user) throws IOException {
-        try (FileOutputStream outputStream = new FileOutputStream("/user.ser");
+    public void serialize(User user) {
+        try (FileOutputStream outputStream = new FileOutputStream(PATH);
              ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream)) {
             objectOutputStream.writeObject(user);
         } catch (IOException e) {
@@ -24,8 +24,8 @@ public class FileStorageProcessor implements StorageProcessor{
     public boolean isFileEmpty(File file) {
         return file.length() == 0;
     }
-    public User deserialize(String path) throws IOException {
-        File file = new File("/user.ser");
+    public User deserialize(String path) {
+        File file = new File(path);
         if (isFileEmpty(file)) {
             createNewUser();
         }
@@ -45,22 +45,23 @@ public class FileStorageProcessor implements StorageProcessor{
         user = new User();
         userInterface.showInfo("Seems like you're new to our app! Let's create a user!\n" +
                 "Please enter your name: ");
-        String name = (String)userInterface.askInfo();
+        String name = (String)userInterface.askInfo("string");
         user.setName(name);
         userInterface.showInfo("Nice to meet you, " + name + "! Now enter your start budget: ");
-        int budget = (int)userInterface.askInfo();
+        int budgetInt = (int)userInterface.askInfo("int");
+        IntHolder budget = new IntHolder(budgetInt);
         user.setBudget(budget);
-        user.setExpends(new HashMap<String, Integer>());
-        user.setIncomes(new HashMap<String, Integer>());
+        user.setExpends(new HashMap<>());
+        user.setIncomes(new HashMap<>());
     }
 
     @Override
-    public void getUserInfo() throws IOException {
+    public void getUserInfo(){
         serialize(user);
     }
 
     @Override
-    public void saveUserInfo() throws IOException {
-        deserialize("/user.ser");
+    public void saveUserInfo(){
+        deserialize(PATH);
     }
 }

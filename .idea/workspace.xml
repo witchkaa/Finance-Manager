@@ -5,22 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a47500b5-09e8-4099-87c8-cec65dd12c68" name="Changes" comment="Add functionality">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/logic/ChangeBudgetCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/logic/CommandFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/logic/ViewBudgetCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/logic/ViewExpensesCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/logic/ViewIncomesCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/storage/FileStorageProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/logic/AddExpenseCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/logic/AddIncomeCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/logic/MarkExpenseDoneCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/logic/MarkIncomeDoneCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/logic/RemoveExpenseCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/logic/RemoveIncomeCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/storage/IntHolder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logic/ChangeBudgetCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/ChangeBudgetCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/logic/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/storage/StorageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/StorageProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logic/CommandFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/CommandFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/storage/FileStorageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/FileStorageProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/storage/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/userinterface/Console.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userinterface/Console.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/userinterface/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userinterface/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/userinterface/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userinterface/UserInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +44,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2PLTESYNZcQolnGn88pFFvFgbS1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -96,7 +97,7 @@
       <workItem from="1684154702923" duration="12664000" />
       <workItem from="1684405118073" duration="131000" />
       <workItem from="1684416955012" duration="1993000" />
-      <workItem from="1684658634495" duration="2063000" />
+      <workItem from="1684658634495" duration="9921000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1683237589543</created>
@@ -133,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684164054336</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add functionality">
+      <created>1684667034309</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684667034309</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
