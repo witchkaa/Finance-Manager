@@ -4,17 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a47500b5-09e8-4099-87c8-cec65dd12c68" name="Changes" comment="Refactor using patterns. Add folders">
-      <change afterPath="$PROJECT_DIR$/src/logic/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/storage/StorageProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/storage/StorageRuntimeException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/storage/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/storage/user.ser" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/userinterface/Console.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/userinterface/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/userinterface/UserInterface.java" afterDir="false" />
+    <list default="true" id="a47500b5-09e8-4099-87c8-cec65dd12c68" name="Changes" comment="Add functionality">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/logic/ChangeBudgetCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/logic/CommandFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/logic/ViewBudgetCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/logic/ViewExpensesCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/logic/ViewIncomesCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/storage/FileStorageProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logic/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/storage/StorageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/StorageProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/storage/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userinterface/Console.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userinterface/Console.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userinterface/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userinterface/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userinterface/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userinterface/UserInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +31,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -48,23 +55,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -85,7 +93,10 @@
       <workItem from="1683836135981" duration="337000" />
       <workItem from="1683836550439" duration="1661000" />
       <workItem from="1683984181525" duration="369000" />
-      <workItem from="1684154702923" duration="7418000" />
+      <workItem from="1684154702923" duration="12664000" />
+      <workItem from="1684405118073" duration="131000" />
+      <workItem from="1684416955012" duration="1993000" />
+      <workItem from="1684658634495" duration="2063000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1683237589543</created>
@@ -115,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684155929594</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add functionality">
+      <created>1684164054336</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684164054336</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,9 +152,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init commit" />
-    <MESSAGE value="Add functionality" />
     <MESSAGE value="Add README.md" />
     <MESSAGE value="Refactor using patterns. Add folders" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor using patterns. Add folders" />
+    <MESSAGE value="Add functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add functionality" />
   </component>
 </project>

@@ -2,12 +2,29 @@ package storage;
 
 import java.io.Serializable;
 import java.util.HashMap;
+import java.util.Map;
 
 public class User implements Serializable {
     private String name;
     private int budget;
     private HashMap<String, Integer> incomes;
     private HashMap<String, Integer> expends;
+
+    public String getName() {
+        return name;
+    }
+
+    public int getBudget() {
+        return budget;
+    }
+
+    public HashMap<String, Integer> getIncomes() {
+        return incomes;
+    }
+
+    public HashMap<String, Integer> getExpends() {
+        return expends;
+    }
 
     public void setName(String name) {
         this.name = name;
@@ -17,19 +34,19 @@ public class User implements Serializable {
         this.budget = budget;
     }
 
-    public void setIncomes(HashMap<String, Integer> incomes) {
-        this.incomes = incomes;
+    public void setIncomes(Map<String, Integer> incomes) {
+        this.incomes = (HashMap<String, Integer>) incomes;
     }
 
-    public void setExpends(HashMap<String, Integer> expends) {
-        this.expends = expends;
+    public void setExpends(Map<String, Integer> expends) {
+        this.expends = (HashMap<String, Integer>) expends;
     }
 
-    public User(String name, int budget, HashMap<String, Integer> incomes, HashMap<String, Integer> expends) {
+    public User(String name, int budget, Map<String, Integer> incomes, Map<String, Integer> expends) {
         this.name = name;
         this.budget = budget;
-        this.incomes = incomes;
-        this.expends = expends;
+        this.incomes = (HashMap<String, Integer>) incomes;
+        this.expends = (HashMap<String, Integer>) expends;
     }
     public User() {}
 }

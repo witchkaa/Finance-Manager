@@ -1,12 +1,11 @@
 package userinterface;
 
-import storage.StorageProcessor;
-import storage.User;
+import storage.FileStorageProcessor;
 
 public class Main {
     public static void main(String[] args) {
-        UserInterface UI = new Console();
-        StorageProcessor storageProcessor = new StorageProcessor(UI);
+        UserInterface ui = new Console();
+        FileStorageProcessor fileStorageProcessor = new FileStorageProcessor(ui);
 
     }
 }
