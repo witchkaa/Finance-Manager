@@ -23,8 +23,10 @@ public class MarkExpenseDoneCommand implements Command{
             int oldBudget = user.getBudget().getValue();
             IntHolder newBudget = new IntHolder(oldBudget - value);
             user.setBudget(newBudget);
+            user.getHistory().add(value * (-1));
             user.getExpends().remove(choice);
             userInterface.showInfo("Marked as done successfully!");
+
         } else {
             userInterface.showInfo("Wrong comment!");
         }

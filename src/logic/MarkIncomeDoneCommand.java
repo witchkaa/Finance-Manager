@@ -19,10 +19,11 @@ public class MarkIncomeDoneCommand implements Command{
                 "Make sure you do it correctly!");
         String choice = (String)userInterface.askInfo("string");
         if(user.getIncomes().containsKey(choice)) {
-            int value = user.getExpends().get(choice);
+            int value = user.getIncomes().get(choice);
             int oldBudget = user.getBudget().getValue();
             IntHolder newBudget = new IntHolder(oldBudget + value);
             user.setBudget(newBudget);
+            user.getHistory().add(value);
             user.getIncomes().remove(choice);
             userInterface.showInfo("Marked as done successfully!");
         } else {

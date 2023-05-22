@@ -2,6 +2,7 @@ package storage;
 
 import userinterface.UserInterface;
 import java.io.*;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class FileStorageProcessor implements StorageProcessor{
@@ -53,6 +54,7 @@ public class FileStorageProcessor implements StorageProcessor{
         user.setBudget(budget);
         user.setExpends(new HashMap<>());
         user.setIncomes(new HashMap<>());
+        user.setHistory(new ArrayList<>());
         return user;
     }
 

@@ -35,6 +35,7 @@ public class Console implements UserInterface {
                 \tremove income without completing - press '9'
                 \tcompare financial plans(incomes and expends) - press '10'
                 \tcompare all finance(incomes, expends and current budget) - press '11'
+                \tshow history stats - press '12'
                 """);
         return scan.nextInt();
     }

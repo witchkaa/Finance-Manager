@@ -1,6 +1,7 @@
 package storage;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -9,6 +10,15 @@ public class User implements Serializable {
     private IntHolder budget;
     private HashMap<String, Integer> incomes;
     private HashMap<String, Integer> expends;
+    private ArrayList<Integer> history;
+
+    public ArrayList<Integer> getHistory() {
+        return history;
+    }
+
+    public void setHistory(ArrayList<Integer> history) {
+        this.history = history;
+    }
 
     public String getName() {
         return name;
