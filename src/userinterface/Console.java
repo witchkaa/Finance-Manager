@@ -33,6 +33,8 @@ public class Console implements UserInterface {
                 \tmark income as done - press '7'
                 \tremove expense without completing - press '8'
                 \tremove income without completing - press '9'
+                \tcompare financial plans(incomes and expends) - press '10'
+                \tcompare all finance(incomes, expends and current budget) - press '11'
                 """);
         return scan.nextInt();
     }

@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a47500b5-09e8-4099-87c8-cec65dd12c68" name="Changes" comment="Finish commands and refactor using SonarLint">
+    <list default="true" id="a47500b5-09e8-4099-87c8-cec65dd12c68" name="Changes" comment="Fix bugs, complete main method">
+      <change afterPath="$PROJECT_DIR$/src/logic/CompareAllCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/logic/ComparePlansCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/logic/CommandFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/CommandFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/storage/FileStorageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/FileStorageProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/storage/IntHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/IntHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/storage/StorageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/StorageProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/storage/user.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/user.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/userinterface/Console.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userinterface/Console.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/userinterface/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userinterface/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/userinterface/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userinterface/UserInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +90,8 @@
       <workItem from="1684405118073" duration="131000" />
       <workItem from="1684416955012" duration="1993000" />
       <workItem from="1684658634495" duration="10995000" />
-      <workItem from="1684757122355" duration="8360000" />
+      <workItem from="1684757122355" duration="8464000" />
+      <workItem from="1684784242358" duration="1500000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1683237589543</created>
@@ -145,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684705490293</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Fix bugs, complete main method">
+      <created>1684772995940</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1684772995940</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,7 +172,8 @@
     <MESSAGE value="Refactor using patterns. Add folders" />
     <MESSAGE value="Add functionality" />
     <MESSAGE value="Finish commands and refactor using SonarLint" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish commands and refactor using SonarLint" />
+    <MESSAGE value="Fix bugs, complete main method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix bugs, complete main method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

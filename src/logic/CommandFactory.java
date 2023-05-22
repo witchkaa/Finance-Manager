@@ -27,6 +27,8 @@ public class CommandFactory {
             case 7 -> command = new MarkIncomeDoneCommand(user, userInterface);
             case 8 -> command = new RemoveExpenseCommand(user, userInterface);
             case 9 -> command = new RemoveIncomeCommand(user, userInterface);
+            case 10 -> command = new ComparePlansCommand(user, userInterface);
+            case 11 -> command = new CompareAllCommand(user, userInterface);
             default -> {
                 command = null;
                 System.out.println("No such command! Type a number 0-10: ");

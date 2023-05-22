@@ -16,7 +16,7 @@ public class ViewExpensesCommand implements Command{
 
     @Override
     public void execute() {
-        userInterface.showInfo("Your planned incomes: ");
+        userInterface.showInfo("Your planned expenses: ");
         Map<String, Integer> expenses = user.getExpends();
         expenses.forEach(
                 (key, value)
