@@ -1,6 +1,8 @@
 package storage;
 
-public class IntHolder {
+import java.io.Serializable;
+
+public class IntHolder implements Serializable {
     private Integer value;
 
     public IntHolder(Integer value) {

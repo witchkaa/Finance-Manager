@@ -4,21 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a47500b5-09e8-4099-87c8-cec65dd12c68" name="Changes" comment="Add functionality">
-      <change afterPath="$PROJECT_DIR$/src/logic/AddExpenseCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/logic/AddIncomeCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/logic/MarkExpenseDoneCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/logic/MarkIncomeDoneCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/logic/RemoveExpenseCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/logic/RemoveIncomeCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/storage/IntHolder.java" afterDir="false" />
+    <list default="true" id="a47500b5-09e8-4099-87c8-cec65dd12c68" name="Changes" comment="Finish commands and refactor using SonarLint">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/ChangeBudgetCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/ChangeBudgetCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/Command.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/logic/CommandFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/CommandFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/storage/FileStorageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/FileStorageProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/storage/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/storage/IntHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/IntHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/storage/StorageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/StorageProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/storage/user.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/user.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/userinterface/Console.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userinterface/Console.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userinterface/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userinterface/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/userinterface/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userinterface/UserInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +93,8 @@
       <workItem from="1684154702923" duration="12664000" />
       <workItem from="1684405118073" duration="131000" />
       <workItem from="1684416955012" duration="1993000" />
-      <workItem from="1684658634495" duration="9921000" />
+      <workItem from="1684658634495" duration="10995000" />
+      <workItem from="1684757122355" duration="8360000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1683237589543</created>
@@ -141,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684667034309</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Finish commands and refactor using SonarLint">
+      <created>1684705490293</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1684705490293</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,6 +167,17 @@
     <MESSAGE value="Add README.md" />
     <MESSAGE value="Refactor using patterns. Add folders" />
     <MESSAGE value="Add functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add functionality" />
+    <MESSAGE value="Finish commands and refactor using SonarLint" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish commands and refactor using SonarLint" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.NoSuchElementException" package="java.util" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

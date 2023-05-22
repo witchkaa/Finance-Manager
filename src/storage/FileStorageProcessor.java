@@ -1,14 +1,13 @@
 package storage;
 
 import userinterface.UserInterface;
-
 import java.io.*;
 import java.util.HashMap;
 
 public class FileStorageProcessor implements StorageProcessor{
     User user;
     UserInterface userInterface;
-    private static final String PATH  = "\\user.ser";
+    private static final String PATH  = "C:\\Users\\User\\IdeaProjects\\Finance-Manager\\src\\storage\\user.ser";
     public FileStorageProcessor(UserInterface userInterface) {
         this.userInterface = userInterface;
     }
@@ -17,6 +16,7 @@ public class FileStorageProcessor implements StorageProcessor{
         try (FileOutputStream outputStream = new FileOutputStream(PATH);
              ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream)) {
             objectOutputStream.writeObject(user);
+            objectOutputStream.flush();
         } catch (IOException e) {
             throw new StorageRuntimeException("Something went wrong!");
         }
@@ -41,27 +41,29 @@ public class FileStorageProcessor implements StorageProcessor{
         }
         return user;
     }
-    public void createNewUser() {
+    public User createNewUser() {
         user = new User();
         userInterface.showInfo("Seems like you're new to our app! Let's create a user!\n" +
                 "Please enter your name: ");
         String name = (String)userInterface.askInfo("string");
         user.setName(name);
         userInterface.showInfo("Nice to meet you, " + name + "! Now enter your start budget: ");
-        int budgetInt = (int)userInterface.askInfo("int");
+        Integer budgetInt = (Integer)userInterface.askInfo("int");
         IntHolder budget = new IntHolder(budgetInt);
         user.setBudget(budget);
         user.setExpends(new HashMap<>());
         user.setIncomes(new HashMap<>());
+        return user;
     }
 
     @Override
-    public void getUserInfo(){
-        serialize(user);
+    public User getUserInfo(){
+        User user = deserialize(PATH);
+        return user;
     }
 
     @Override
     public void saveUserInfo(){
-        deserialize(PATH);
+        serialize(user);
     }
 }

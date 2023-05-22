@@ -8,11 +8,10 @@ import java.util.Scanner;
 public class CommandFactory {
     User user;
     UserInterface userInterface;
-    Command command;
 
-    public CommandFactory(UserInterface userInterface, Command command) {
+    public CommandFactory(UserInterface userInterface, User user) {
         this.userInterface = userInterface;
-        this.command = command;
+        this.user = user;
     }
 
     public Command createCommand(int type) {
