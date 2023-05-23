@@ -4,14 +4,12 @@ import storage.User;
 import userinterface.UserInterface;
 
 public class AddIncomeCommand implements Command{
-    private User user;
-    private UserInterface userInterface;
-
+    private final User user;
+    private final UserInterface userInterface;
     public AddIncomeCommand(User user, UserInterface userInterface) {
         this.user = user;
         this.userInterface = userInterface;
     }
-
     @Override
     public void execute() {
         userInterface.showInfo("Enter comment: ");

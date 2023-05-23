@@ -5,17 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a47500b5-09e8-4099-87c8-cec65dd12c68" name="Changes" comment="Add functionality">
-      <change afterPath="$PROJECT_DIR$/src/logic/ShowHistoryStatsCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logic/AddExpenseCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/AddExpenseCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logic/AddIncomeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/AddIncomeCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logic/ChangeBudgetCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/ChangeBudgetCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/logic/CommandFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/CommandFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logic/CompareAllCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/CompareAllCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logic/ComparePlansCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/ComparePlansCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/logic/MarkExpenseDoneCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/MarkExpenseDoneCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/logic/MarkIncomeDoneCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/MarkIncomeDoneCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logic/RemoveExpenseCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/RemoveExpenseCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logic/RemoveIncomeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/RemoveIncomeCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logic/ShowHistoryStatsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/ShowHistoryStatsCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logic/ViewBudgetCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/ViewBudgetCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logic/ViewExpensesCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/ViewExpensesCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logic/ViewIncomesCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/ViewIncomesCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/storage/FileStorageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/FileStorageProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/storage/IntHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/IntHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/storage/StorageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/StorageProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/storage/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/storage/user.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/user.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/userinterface/Console.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userinterface/Console.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userinterface/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userinterface/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +108,8 @@
       <workItem from="1684416955012" duration="1993000" />
       <workItem from="1684658634495" duration="10995000" />
       <workItem from="1684757122355" duration="8464000" />
-      <workItem from="1684784242358" duration="3323000" />
+      <workItem from="1684784242358" duration="3660000" />
+      <workItem from="1684834301629" duration="5449000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1683237589543</created>
@@ -160,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684786080194</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Add functionality">
+      <created>1684787657375</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1684787657375</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

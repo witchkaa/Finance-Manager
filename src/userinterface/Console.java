@@ -1,9 +1,10 @@
 package userinterface;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Console implements UserInterface {
-    public static Scanner scan = new Scanner(System.in);
+    public static final Scanner scan = new Scanner(System.in);
     @Override
     public void showInfo(String info) {
         System.out.println(info);
@@ -13,9 +14,12 @@ public class Console implements UserInterface {
         Object res = null;
         if(type.equals("int")) {
             res = scan.nextInt();
-        } else if(type.equals("string")) {
-            res = scan.nextLine();
             scan.nextLine();
+        } else if(type.equals("string")) {
+            scan.nextLine();
+            res = scan.nextLine();
+        } else if(type.equals("word")) {
+            res = scan.next();
         }
         return res;
     }
@@ -48,7 +52,13 @@ public class Console implements UserInterface {
     @Override
     public int askToStop() {
         System.out.println("Press 0 to continue, any other number to save and quit");
-        return scan.nextInt();
+        int choice = 0;
+        try {
+            choice =  scan.nextInt();
+        } catch (InputMismatchException e) {
+            System.out.println("Wrong input, try again!");
+        }
+        return choice;
     }
 
 }

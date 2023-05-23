@@ -6,14 +6,12 @@ import userinterface.UserInterface;
 import java.util.Scanner;
 
 public class CommandFactory {
-    User user;
-    UserInterface userInterface;
-
+    private final User user;
+    private final UserInterface userInterface;
     public CommandFactory(UserInterface userInterface, User user) {
         this.userInterface = userInterface;
         this.user = user;
     }
-
     public Command createCommand(int type) {
         Command command;
         switch(type) {

@@ -5,7 +5,6 @@ import logic.CommandFactory;
 import storage.FileStorageProcessor;
 import storage.StorageProcessor;
 import storage.User;
-
 import java.io.IOException;
 
 public class Main {
@@ -20,15 +19,18 @@ public class Main {
                 Command command = commandFactory.createCommand(choice);
                 command.execute();
             } while (ui.askToStop() == 0);
-            try {
-                fileStorageProcessor.saveUserInfo();
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
+            saveUser(fileStorageProcessor);
             Console.scan.close();
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
 
+    }
+    public static void saveUser(StorageProcessor fileStorageProcessor) {
+        try {
+            fileStorageProcessor.saveUserInfo();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

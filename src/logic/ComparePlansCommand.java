@@ -2,18 +2,15 @@ package logic;
 
 import storage.User;
 import userinterface.UserInterface;
-
 import java.util.Map;
 
 public class ComparePlansCommand implements Command{
-    private User user;
-    private UserInterface userInterface;
-
+    private final User user;
+    private final UserInterface userInterface;
     public ComparePlansCommand(User user, UserInterface userInterface) {
         this.user = user;
         this.userInterface = userInterface;
     }
-
     @Override
     public void execute() {
         Map<String, Integer> expends = user.getExpends();

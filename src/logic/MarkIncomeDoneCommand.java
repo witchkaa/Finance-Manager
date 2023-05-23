@@ -5,14 +5,12 @@ import storage.User;
 import userinterface.UserInterface;
 
 public class MarkIncomeDoneCommand implements Command{
-    private UserInterface userInterface;
-    private User user;
-
+    private final UserInterface userInterface;
+    private final User user;
     public MarkIncomeDoneCommand(User user, UserInterface userInterface) {
         this.userInterface = userInterface;
         this.user = user;
     }
-
     @Override
     public void execute() {
         userInterface.showInfo("Type in the comment to the income you want to mark as done. " +

@@ -28,7 +28,7 @@ public class FileStorageProcessor implements StorageProcessor{
     public User deserialize(String path) {
         File file = new File(path);
         if (isFileEmpty(file)) {
-            createNewUser();
+            this.user = createNewUser();
         }
         else {
             try (FileInputStream fileInputStream = new FileInputStream(path);
@@ -36,8 +36,8 @@ public class FileStorageProcessor implements StorageProcessor{
                 User user = (User) objectInputStream.readObject();
                 this.user = user;
                 return user;
-            } catch (IOException | ClassNotFoundException e) {
-                throw new StorageRuntimeException("Something went wrong...");
+            } catch (IOException| ClassNotFoundException e) {
+                throw new StorageRuntimeException("Couldn't read the file...");
             }
         }
         return user;
@@ -45,11 +45,11 @@ public class FileStorageProcessor implements StorageProcessor{
     public User createNewUser() {
         user = new User();
         userInterface.showInfo("Seems like you're new to our app! Let's create a user!\n" +
-                "Please enter your name: ");
-        String name = (String)userInterface.askInfo("string");
+                "Please enter your first name: ");
+        String name = (String)userInterface.askInfo("word");
         user.setName(name);
         userInterface.showInfo("Nice to meet you, " + name + "! Now enter your start budget: ");
-        Integer budgetInt = (Integer)userInterface.askInfo("int");
+        Integer budgetInt = (Integer) userInterface.askInfo("int");
         IntHolder budget = new IntHolder(budgetInt);
         user.setBudget(budget);
         user.setExpends(new HashMap<>());
@@ -61,6 +61,7 @@ public class FileStorageProcessor implements StorageProcessor{
     @Override
     public User getUserInfo(){
         User user = deserialize(PATH);
+        userInterface.greet();
         return user;
     }
 

@@ -5,9 +5,8 @@ import storage.User;
 import userinterface.UserInterface;
 
 public class ChangeBudgetCommand implements Command{
-    private User user;
-    private UserInterface userInterface;
-
+    private final User user;
+    private final UserInterface userInterface;
     public ChangeBudgetCommand(User user, UserInterface userInterface) {
         this.user = user;
         this.userInterface = userInterface;
