@@ -12,14 +12,32 @@ public class Console implements UserInterface {
     @Override
     public Object askInfo(String type) {
         Object res = null;
-        if(type.equals("int")) {
-            res = scan.nextInt();
-            scan.nextLine();
-        } else if(type.equals("string")) {
-            scan.nextLine();
-            res = scan.nextLine();
-        } else if(type.equals("word")) {
-            res = scan.next();
+        switch (type) {
+            case "int" -> {
+                try {
+                    res = scan.nextInt();
+                } catch (InputMismatchException e) {
+                    System.out.println("Wrong input! Try again. Expected an integer value there.");
+                } finally {
+                    scan.nextLine();
+                }
+            }
+            case "string" -> {
+                try {
+                    scan.nextLine();
+                    res = scan.nextLine();
+                } catch(InputMismatchException e) {
+                    System.out.println("Wrong input! Try again. Expected a string line there.");
+                }
+            }
+            case "word" -> {
+                try {
+                    res = scan.next();
+                } catch (InputMismatchException e){
+                    System.out.println("Wrong input! Try again. Expected a word there.");
+                }
+            }
+            default -> System.out.println("No such element");
         }
         return res;
     }
@@ -48,7 +66,10 @@ public class Console implements UserInterface {
     public void greet() {
         System.out.println("Hello there!");
     }
-
+    @Override
+    public void sayBye() {
+        System.out.println("Changes have been saved. Bye!");
+    }
     @Override
     public int askToStop() {
         System.out.println("Press 0 to continue, any other number to save and quit");

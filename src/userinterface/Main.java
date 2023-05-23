@@ -20,15 +20,16 @@ public class Main {
                 command.execute();
             } while (ui.askToStop() == 0);
             saveUser(fileStorageProcessor);
+            ui.sayBye();
             Console.scan.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
 
     }
-    public static void saveUser(StorageProcessor fileStorageProcessor) {
+    public static void saveUser(StorageProcessor storageProcessor) {
         try {
-            fileStorageProcessor.saveUserInfo();
+            storageProcessor.saveUserInfo();
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -13,18 +13,18 @@ public class CompareAllCommand implements Command{
     }
     @Override
     public void execute() {
-        Map<String, Integer> expends = user.getExpends();
+        Map<String, Integer> expends = user.getExpences();
         Map<String, Integer> incomes = user.getIncomes();
         int budget = user.getBudget().getValue();
         int incomesSum = 0;
-        int expendsSum = 0;
+        int expensesSum = 0;
         for(Map.Entry<String, Integer> entry : expends.entrySet()) {
-            expendsSum += entry.getValue();
+            expensesSum += entry.getValue();
         }
         for(Map.Entry<String, Integer> entry : incomes.entrySet()) {
             incomesSum += entry.getValue();
         }
-        int comparison = budget + incomesSum - expendsSum;
+        int comparison = budget + incomesSum - expensesSum;
         if (comparison > 0) {
             userInterface.showInfo("Your planned incomes plus your budget are more than your planned expends by " + comparison +
                     "! That is good!"

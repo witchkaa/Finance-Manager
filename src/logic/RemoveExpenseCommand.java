@@ -15,11 +15,11 @@ public class RemoveExpenseCommand implements Command{
         userInterface.showInfo("Type in the comment to the expense you want to mark as done. " +
                 "Make sure you do it correctly!");
         String choice = (String)userInterface.askInfo("string");
-        if(user.getExpends().containsKey(choice)) {
-            user.getExpends().remove(choice);
+        if(user.getExpences().containsKey(choice)) {
+            user.getExpences().remove(choice);
             userInterface.showInfo("Removed successfully!");
         } else {
-            userInterface.showInfo("Wrong comment!");
+            userInterface.showInfo("Wrong comment! There is no expense with this comment.");
         }
     }
 }

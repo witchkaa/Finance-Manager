@@ -15,9 +15,14 @@ public class ViewExpensesCommand implements Command{
     @Override
     public void execute() {
         userInterface.showInfo("Your planned expenses: ");
-        Map<String, Integer> expenses = user.getExpends();
-        expenses.forEach(
-                (key, value)
-                        -> userInterface.showInfo("\tAmount: " + value + ", comment: " + key + "."));
+        Map<String, Integer> expenses = user.getExpences();
+        if (expenses.isEmpty()) {
+            userInterface.showInfo("No planned expenses added.");
+        } else {
+            expenses.forEach(
+                    (key, value)
+                            -> userInterface.showInfo("\tAmount: " + value + ", comment: " + key + "."));
+        }
     }
+
 }

@@ -25,7 +25,7 @@ public class MarkIncomeDoneCommand implements Command{
             user.getIncomes().remove(choice);
             userInterface.showInfo("Marked as done successfully!");
         } else {
-            userInterface.showInfo("Wrong comment!");
+            userInterface.showInfo("Wrong comment! There is no income with this comment.");
         }
     }
 }

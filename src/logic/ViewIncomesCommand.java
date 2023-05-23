@@ -16,8 +16,13 @@ public class ViewIncomesCommand implements Command{
     public void execute() {
         userInterface.showInfo("Your planned incomes: ");
         Map<String, Integer> incomes = user.getIncomes();
-        incomes.forEach(
-                (key, value)
-                -> userInterface.showInfo("\tAmount: " + value + ", comment: " + key + "."));
+        if (incomes.isEmpty()) {
+            userInterface.showInfo("No planned incomes added.");
+        } else {
+            incomes.forEach(
+                    (key, value)
+                            -> userInterface.showInfo("\tAmount: " + value + ", comment: " + key + "."));
+        }
     }
+
 }

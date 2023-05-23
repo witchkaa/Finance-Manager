@@ -19,7 +19,7 @@ public class RemoveIncomeCommand implements Command{
             user.getIncomes().remove(choice);
             userInterface.showInfo("Removed successfully!");
         } else {
-            userInterface.showInfo("Wrong comment!");
+            userInterface.showInfo("Wrong comment! There is no income with this comment.");
         }
     }
 }

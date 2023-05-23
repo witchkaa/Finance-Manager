@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a47500b5-09e8-4099-87c8-cec65dd12c68" name="Changes" comment="Add functionality">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+    <list default="true" id="a47500b5-09e8-4099-87c8-cec65dd12c68" name="Changes" comment="Refactor using SonarLint">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/bluecatcode_junit_4_12_extended.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/9/496a238a6afa168dbaf6efd37bb459331589579c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/9/496a238a6afa168dbaf6efd37bb459331589579c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finance-Manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Finance-Manager.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/logic/AddExpenseCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/AddExpenseCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/logic/AddIncomeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/AddIncomeCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/logic/ChangeBudgetCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/ChangeBudgetCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/CommandFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/CommandFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/logic/CompareAllCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/CompareAllCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/logic/ComparePlansCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/ComparePlansCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/logic/MarkExpenseDoneCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/MarkExpenseDoneCommand.java" afterDir="false" />
@@ -19,16 +20,13 @@
       <change beforePath="$PROJECT_DIR$/src/logic/RemoveExpenseCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/RemoveExpenseCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/logic/RemoveIncomeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/RemoveIncomeCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/logic/ShowHistoryStatsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/ShowHistoryStatsCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/ViewBudgetCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/ViewBudgetCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/logic/ViewExpensesCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/ViewExpensesCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/logic/ViewIncomesCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/ViewIncomesCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/storage/FileStorageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/FileStorageProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/storage/IntHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/IntHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/storage/StorageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/StorageProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/storage/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/storage/user.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/user.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/userinterface/Console.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userinterface/Console.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/userinterface/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userinterface/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userinterface/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userinterface/UserInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,24 +63,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "true",
+    "Repository.Attach.Annotations": "true",
+    "Repository.Attach.JavaDocs": "true",
+    "Repository.Attach.Sources": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "testing.instrumented.configuration",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -109,7 +111,7 @@
       <workItem from="1684658634495" duration="10995000" />
       <workItem from="1684757122355" duration="8464000" />
       <workItem from="1684784242358" duration="3660000" />
-      <workItem from="1684834301629" duration="5449000" />
+      <workItem from="1684834301629" duration="14336000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1683237589543</created>
@@ -181,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684787657375</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Refactor using SonarLint">
+      <created>1684840498711</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1684840498711</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,7 +214,8 @@
     <MESSAGE value="Finish commands and refactor using SonarLint" />
     <MESSAGE value="Fix bugs, complete main method" />
     <MESSAGE value="Add functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add functionality" />
+    <MESSAGE value="Refactor using SonarLint" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor using SonarLint" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -15,8 +15,11 @@ public class AddExpenseCommand implements Command{
         userInterface.showInfo("Enter comment: ");
         String comment = (String) userInterface.askInfo("string");
         userInterface.showInfo("Enter amount: ");
-        int amount = (int)userInterface.askInfo("int");
-        user.getExpends().put(comment, amount);
-        userInterface.showInfo("Put successfully!");
+        Object info = userInterface.askInfo("int");
+        if(info != null) {
+            int amount = (int) info;
+            user.getExpences().put(comment, amount);
+            userInterface.showInfo("An expense (value: " + amount + ", comment: " + comment +  ") was put successfully!");
+        }
     }
 }

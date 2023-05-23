@@ -15,8 +15,11 @@ public class AddIncomeCommand implements Command{
         userInterface.showInfo("Enter comment: ");
         String comment = (String) userInterface.askInfo("string");
         userInterface.showInfo("Enter amount: ");
-        int amount = (int) userInterface.askInfo("int");
-        user.getExpends().put(comment, amount);
-        userInterface.showInfo("Put successfully!");
+        Object info = userInterface.askInfo("int");
+        if(info != null) {
+            int amount = (int) info;
+            user.getIncomes().put(comment, amount);
+            userInterface.showInfo("An income (value: " + amount + ", comment: " + comment +  ") was put successfully!");
+        }
     }
 }

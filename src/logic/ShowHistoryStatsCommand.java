@@ -15,10 +15,14 @@ public class ShowHistoryStatsCommand implements Command{
     @Override
     public void execute() {
         List<Integer> history = user.getHistory();
-        int sum = 0;
-        for(Integer value: history) {
-            sum += value;
+        if(!(history.isEmpty())) {
+            int sum = 0;
+            for (Integer value : history) {
+                sum += value;
+            }
+            userInterface.showInfo("History of transactions stats: incomes-expenses = " + sum);
+        } else {
+            userInterface.showInfo("No archived transactions available.");
         }
-        userInterface.showInfo("History of transactions stats: incomes-expenses = " + sum);
     }
 }

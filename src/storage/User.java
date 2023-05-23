@@ -9,7 +9,7 @@ public class User implements Serializable {
     private String name;
     private IntHolder budget;
     private HashMap<String, Integer> incomes;
-    private HashMap<String, Integer> expends;
+    private HashMap<String, Integer> expences;
     private List<Integer> history;
     public List<Integer> getHistory() {
         return history;
@@ -26,8 +26,8 @@ public class User implements Serializable {
     public Map<String, Integer> getIncomes() {
         return incomes;
     }
-    public Map<String, Integer> getExpends() {
-        return expends;
+    public Map<String, Integer> getExpences() {
+        return expences;
     }
     public void setName(String name) {
         this.name = name;
@@ -36,13 +36,13 @@ public class User implements Serializable {
         this.incomes = (HashMap<String, Integer>) incomes;
     }
     public void setExpends(Map<String, Integer> expends) {
-        this.expends = (HashMap<String, Integer>) expends;
+        this.expences = (HashMap<String, Integer>) expends;
     }
     public User(String name, IntHolder budget, Map<String, Integer> incomes, Map<String, Integer> expends) {
         this.name = name;
         this.budget = budget;
         this.incomes = (HashMap<String, Integer>) incomes;
-        this.expends = (HashMap<String, Integer>) expends;
+        this.expences = (HashMap<String, Integer>) expends;
     }
     public User() {}
     public void setBudget(IntHolder budget) {

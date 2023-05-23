@@ -13,17 +13,17 @@ public class ComparePlansCommand implements Command{
     }
     @Override
     public void execute() {
-        Map<String, Integer> expends = user.getExpends();
+        Map<String, Integer> expends = user.getExpences();
         Map<String, Integer> incomes = user.getIncomes();
         int incomesSum = 0;
-        int expendsSum = 0;
+        int expencesSum = 0;
         for(Map.Entry<String, Integer> entry : expends.entrySet()) {
-            expendsSum += entry.getValue();
+            expencesSum += entry.getValue();
         }
         for(Map.Entry<String, Integer> entry : incomes.entrySet()) {
             incomesSum += entry.getValue();
         }
-        int comparison = incomesSum - expendsSum;
+        int comparison = incomesSum - expencesSum;
         if (comparison > 0) {
             userInterface.showInfo("Your planned incomes are more than your planned expends by " + comparison +
                     "! That is good!"

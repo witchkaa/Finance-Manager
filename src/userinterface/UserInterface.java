@@ -5,5 +5,6 @@ public interface UserInterface {
     Object askInfo(String type);
     int showSuggestions();
     void greet();
+    void sayBye();
     int askToStop();
 }
