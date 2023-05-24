@@ -4,25 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a47500b5-09e8-4099-87c8-cec65dd12c68" name="Changes" comment="Make console output user-friendlier, some refactor">
-      <change afterPath="$PROJECT_DIR$/test/logic/CompareAllCommandTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/logic/ComparePlansCommandTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/logic/ShowHistoryStatsCommandTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/logic/ViewBudgetCommandTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/logic/ViewExpensesCommandTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/logic/ViewIncomesCommandTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/storage/FileStorageProcessorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/userinterface/ConsoleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Finance-Manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Finance-Manager.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/CompareAllCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/CompareAllCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/ComparePlansCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/ComparePlansCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/storage/FileStorageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/FileStorageProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/storage/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/storage/user.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/user.ser" afterDir="false" />
-    </list>
+    <list default="true" id="a47500b5-09e8-4099-87c8-cec65dd12c68" name="Changes" comment="Refactor, add tests" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,7 +75,7 @@
       <recent name="storage" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ViewBudgetCommandTest.testExecute">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="userinterface.Main" />
       <module name="Finance-Manager" />
@@ -170,8 +152,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ViewBudgetCommandTest.testExecute" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.ViewBudgetCommandTest.testExecute" />
         <item itemvalue="JUnit.ComparePlansCommandTest" />
         <item itemvalue="JUnit.AddExpenseCommandTest" />
         <item itemvalue="JUnit.ChangeBudgetCommandTest" />
@@ -207,7 +189,7 @@
       <workItem from="1684834301629" duration="14694000" />
       <workItem from="1684866271442" duration="7025000" />
       <workItem from="1684874264209" duration="195000" />
-      <workItem from="1684939026521" duration="7197000" />
+      <workItem from="1684939026521" duration="7530000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1683237589543</created>
@@ -293,7 +275,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684859232629</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Refactor, add tests">
+      <created>1684953965177</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1684953965177</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,7 +308,8 @@
     <MESSAGE value="Add functionality" />
     <MESSAGE value="Refactor using SonarLint" />
     <MESSAGE value="Make console output user-friendlier, some refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Make console output user-friendlier, some refactor" />
+    <MESSAGE value="Refactor, add tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor, add tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
