@@ -5,10 +5,30 @@ Planning your budget can be a hard thing as not everybody has the financial mana
 Currently, the user interface is console and the storage mechanism is file serialization. It can be easily changed to GUI or DB by implementing UserInterface and StorageProcessor interfaces.
 
 
+Functionality breakdown:
+
+- if you're first to the program, you will be asked to enter your name and current budget
+
+- add expense/income: add your planned transaction (comment + amount) so it is stored in the program
+
+- change budget: add immediate changes to your budget
+
+- compare all: see financial stats based off your budget + planned expenses + planned incomes
+
+- compare plans: see stats based off your planned expenses + incomes
+
+- mark expense/income done: delete it from the planned list and change your budget accorsing to it being done
+
+- remove expense/income: delete it without budget changes
+
+- show history stats: see stats according to your previously marked as done expenses/incomes 
+
+- view budget/expenses/incomes: see this info in a readable way
+
 Linter used: SonarLint.
 
 
-Tests: JUnit
+Tests: JUnit.
 
 
 License: GNU General Public License.
