@@ -17,9 +17,6 @@ public class User implements Serializable {
     public void setHistory(List<Integer> history) {
         this.history = history;
     }
-    public String getName() {
-        return name;
-    }
     public IntHolder getBudget() {
         return budget;
     }
@@ -48,4 +45,5 @@ public class User implements Serializable {
     public void setBudget(IntHolder budget) {
         this.budget = budget;
     }
+
 }

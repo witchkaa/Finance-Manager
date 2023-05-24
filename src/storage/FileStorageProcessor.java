@@ -22,6 +22,9 @@ public class FileStorageProcessor implements StorageProcessor{
             throw new StorageRuntimeException("Something went wrong!");
         }
     }
+    public void setUser(User user) {
+        this.user = user;
+    }
     public boolean isFileEmpty(File file) {
         return file.length() == 0;
     }
@@ -64,7 +67,6 @@ public class FileStorageProcessor implements StorageProcessor{
         userInterface.greet();
         return user;
     }
-
     @Override
     public void saveUserInfo(){
         serialize(user);

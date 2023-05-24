@@ -31,7 +31,7 @@ public class ComparePlansCommand implements Command{
         } else if (comparison == 0) {
             userInterface.showInfo("Wow!!! Your planned incomes and expends are equal! Balance here.");
         } else {
-            userInterface.showInfo("Your planned expends are more than you planned incomes by " + (comparison*(-1)) +
+            userInterface.showInfo("Your planned expends are more than your planned incomes by " + (comparison*(-1)) +
                     ". Consider re-watching your budget.");
         }
     }

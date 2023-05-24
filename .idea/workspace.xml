@@ -4,29 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a47500b5-09e8-4099-87c8-cec65dd12c68" name="Changes" comment="Refactor using SonarLint">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/bluecatcode_junit_4_12_extended.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/9/496a238a6afa168dbaf6efd37bb459331589579c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/9/496a238a6afa168dbaf6efd37bb459331589579c" afterDir="false" />
+    <list default="true" id="a47500b5-09e8-4099-87c8-cec65dd12c68" name="Changes" comment="Make console output user-friendlier, some refactor">
+      <change afterPath="$PROJECT_DIR$/test/logic/CompareAllCommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/logic/ComparePlansCommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/logic/ShowHistoryStatsCommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/logic/ViewBudgetCommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/logic/ViewExpensesCommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/logic/ViewIncomesCommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/storage/FileStorageProcessorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/userinterface/ConsoleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Finance-Manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Finance-Manager.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/AddExpenseCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/AddExpenseCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/AddIncomeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/AddIncomeCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/ChangeBudgetCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/ChangeBudgetCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/logic/CompareAllCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/CompareAllCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/logic/ComparePlansCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/ComparePlansCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/MarkExpenseDoneCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/MarkExpenseDoneCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/MarkIncomeDoneCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/MarkIncomeDoneCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/RemoveExpenseCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/RemoveExpenseCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/RemoveIncomeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/RemoveIncomeCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/ShowHistoryStatsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/ShowHistoryStatsCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/ViewExpensesCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/ViewExpensesCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/ViewIncomesCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/ViewIncomesCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/storage/FileStorageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/FileStorageProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/storage/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/storage/user.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/user.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/userinterface/Console.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userinterface/Console.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/userinterface/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userinterface/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/userinterface/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userinterface/UserInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +33,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit3 Test Class" />
       </list>
     </option>
   </component>
@@ -63,28 +59,125 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "true",
-    "Repository.Attach.Annotations": "true",
-    "Repository.Attach.JavaDocs": "true",
-    "Repository.Attach.Sources": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "testing.instrumented.configuration",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit3&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3&quot;: &quot;junit.framework.TestCase&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;testing.instrumented.configuration&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="junit.framework.TestCase" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="logic" />
+      <recent name="userinterface" />
+      <recent name="storage" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ViewBudgetCommandTest.testExecute">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="userinterface.Main" />
+      <module name="Finance-Manager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="userinterface.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddExpenseCommandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Finance-Manager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="logic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="logic" />
+      <option name="MAIN_CLASS_NAME" value="logic.AddExpenseCommandTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChangeBudgetCommandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Finance-Manager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="logic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="logic" />
+      <option name="MAIN_CLASS_NAME" value="logic.ChangeBudgetCommandTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ComparePlansCommandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Finance-Manager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="logic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="logic" />
+      <option name="MAIN_CLASS_NAME" value="logic.ComparePlansCommandTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ViewBudgetCommandTest.testExecute" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Finance-Manager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="logic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="logic" />
+      <option name="MAIN_CLASS_NAME" value="logic.ViewBudgetCommandTest" />
+      <option name="METHOD_NAME" value="testExecute" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ViewBudgetCommandTest.testExecute" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.ComparePlansCommandTest" />
+        <item itemvalue="JUnit.AddExpenseCommandTest" />
+        <item itemvalue="JUnit.ChangeBudgetCommandTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -111,7 +204,10 @@
       <workItem from="1684658634495" duration="10995000" />
       <workItem from="1684757122355" duration="8464000" />
       <workItem from="1684784242358" duration="3660000" />
-      <workItem from="1684834301629" duration="14336000" />
+      <workItem from="1684834301629" duration="14694000" />
+      <workItem from="1684866271442" duration="7025000" />
+      <workItem from="1684874264209" duration="195000" />
+      <workItem from="1684939026521" duration="7197000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1683237589543</created>
@@ -190,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684840498711</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Make console output user-friendlier, some refactor">
+      <created>1684859232629</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1684859232629</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,7 +318,8 @@
     <MESSAGE value="Fix bugs, complete main method" />
     <MESSAGE value="Add functionality" />
     <MESSAGE value="Refactor using SonarLint" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor using SonarLint" />
+    <MESSAGE value="Make console output user-friendlier, some refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Make console output user-friendlier, some refactor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -224,6 +328,11 @@
           <properties class="java.util.NoSuchElementException" package="java.util" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/logic/ViewExpensesCommand.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
