@@ -1,7 +1,6 @@
 package logic;
 
 import org.junit.jupiter.api.Test;
-import storage.IntHolder;
 import storage.User;
 import userinterface.Console;
 import userinterface.UserInterface;
@@ -24,7 +23,7 @@ class CompareAllCommandTest {
         System.setOut(new PrintStream(outputStream));
         HashMap<String, Integer> expenses = createMap(1150, 175);
         HashMap<String, Integer> incomes = createMap(1150, 175);
-        user.setBudget(new IntHolder(1111110));
+        user.setBudget(1111110);
         user.setIncomes(incomes);
         user.setExpends(expenses);
         compareAllCommand = new CompareAllCommand(user, userInterface);
@@ -41,7 +40,7 @@ class CompareAllCommandTest {
         System.setOut(new PrintStream(outputStream));
         HashMap<String, Integer> expenses = createMap(1150, 175);
         HashMap<String, Integer> incomes = createMap(1150, 175);
-        user.setBudget(new IntHolder(0));
+        user.setBudget(0);
         user.setIncomes(incomes);
         user.setExpends(expenses);
         compareAllCommand = new CompareAllCommand(user, userInterface);
@@ -58,7 +57,7 @@ class CompareAllCommandTest {
         System.setOut(new PrintStream(outputStream));
         HashMap<String, Integer> expenses = createMap(1150, 175);
         HashMap<String, Integer> incomes = createMap(150, 120);
-        user.setBudget(new IntHolder(100));
+        user.setBudget(100);
         user.setIncomes(incomes);
         user.setExpends(expenses);
         compareAllCommand = new CompareAllCommand(user, userInterface);

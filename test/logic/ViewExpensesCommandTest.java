@@ -44,9 +44,10 @@ public class ViewExpensesCommandTest {
 
         System.setOut(systemOut);
 
-        String expectedOutput = "Your planned expenses: \n" +
-                "\tAmount: 200, comment: Utilities.\n" +
-                "\tAmount: 1000, comment: Rent.";
+        String expectedOutput = """
+                Your planned expenses:\s
+                \tAmount: 200, comment: Utilities.
+                \tAmount: 1000, comment: Rent.""";
 
         String actualOutput = outputStream.toString().replace("\r\n", "\n");
 

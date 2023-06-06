@@ -3,7 +3,6 @@ package logic;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import storage.IntHolder;
 import storage.User;
 import userinterface.Console;
 import java.io.ByteArrayOutputStream;
@@ -25,7 +24,7 @@ public class ViewBudgetCommandTest {
     @Test
     public void testExecute() {
         User testUser = new User();
-        IntHolder budget = new IntHolder(5000);
+        Integer budget = 5000;
         testUser.setBudget(budget);
         Console mockUserInterface = new Console();
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();

@@ -4,7 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a47500b5-09e8-4099-87c8-cec65dd12c68" name="Changes" comment="Refactor, add tests" />
+    <list default="true" id="a47500b5-09e8-4099-87c8-cec65dd12c68" name="Changes" comment="Clear user.ser">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logic/ChangeBudgetCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/ChangeBudgetCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logic/CompareAllCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/CompareAllCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logic/MarkExpenseDoneCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/MarkExpenseDoneCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logic/MarkIncomeDoneCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/MarkIncomeDoneCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/storage/FileStorageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/FileStorageProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/storage/IntHolder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/storage/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/storage/user.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/user.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/logic/CompareAllCommandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/logic/CompareAllCommandTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/logic/ShowHistoryStatsCommandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/logic/ShowHistoryStatsCommandTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/logic/ViewBudgetCommandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/logic/ViewBudgetCommandTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/logic/ViewExpensesCommandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/logic/ViewExpensesCommandTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/storage/FileStorageProcessorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/storage/FileStorageProcessorTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -155,8 +172,8 @@
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.ViewBudgetCommandTest.testExecute" />
         <item itemvalue="JUnit.ComparePlansCommandTest" />
-        <item itemvalue="JUnit.AddExpenseCommandTest" />
         <item itemvalue="JUnit.ChangeBudgetCommandTest" />
+        <item itemvalue="JUnit.AddExpenseCommandTest" />
       </list>
     </recent_temporary>
   </component>
@@ -190,6 +207,12 @@
       <workItem from="1684866271442" duration="7025000" />
       <workItem from="1684874264209" duration="195000" />
       <workItem from="1684939026521" duration="7530000" />
+      <workItem from="1685211111484" duration="843000" />
+      <workItem from="1685377465859" duration="8000" />
+      <workItem from="1685378110331" duration="310000" />
+      <workItem from="1685393583770" duration="6000" />
+      <workItem from="1686054838913" duration="11000" />
+      <workItem from="1686057935719" duration="724000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1683237589543</created>
@@ -318,11 +341,6 @@
           <properties class="java.util.NoSuchElementException" package="java.util" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/logic/ViewExpensesCommand.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

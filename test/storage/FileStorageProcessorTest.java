@@ -9,11 +9,10 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import static org.junit.Assert.*;
 public class FileStorageProcessorTest {
-    private Console userInterface;
     private FileStorageProcessor storageProcessor;
     @Before
     public void setUp() {
-        userInterface = new Console();
+        Console userInterface = new Console();
         storageProcessor = new FileStorageProcessor(userInterface);
     }
     @Test

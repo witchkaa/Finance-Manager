@@ -91,20 +91,22 @@ public class ConsoleTest {
         int choice = console.showSuggestions();
 
         Assert.assertEquals(5, choice);
-        Assert.assertEquals("Choose what would you like to do:\n" +
-                "\tview current budget - press '0'\n" +
-                "\tchange budget - press '1'\n" +
-                "\tview planned expenses - press '2'\n" +
-                "\tview planned incomes - press '3'\n" +
-                "\tadd expense - press '4'\n" +
-                "\tadd income - press '5'\n" +
-                "\tmark expense as done - press '6'\n" +
-                "\tmark income as done - press '7'\n" +
-                "\tremove expense without completing - press '8'\n" +
-                "\tremove income without completing - press '9'\n" +
-                "\tcompare financial plans(incomes and expends) - press '10'\n" +
-                "\tcompare all finance(incomes, expends and current budget) - press '11'\n" +
-                "\tshow history stats - press '12'\n", testOut.toString());
+        Assert.assertEquals("""
+                Choose what would you like to do:
+                \tview current budget - press '0'
+                \tchange budget - press '1'
+                \tview planned expenses - press '2'
+                \tview planned incomes - press '3'
+                \tadd expense - press '4'
+                \tadd income - press '5'
+                \tmark expense as done - press '6'
+                \tmark income as done - press '7'
+                \tremove expense without completing - press '8'
+                \tremove income without completing - press '9'
+                \tcompare financial plans(incomes and expends) - press '10'
+                \tcompare all finance(incomes, expends and current budget) - press '11'
+                \tshow history stats - press '12'
+                """, testOut.toString());
     }
 
 }

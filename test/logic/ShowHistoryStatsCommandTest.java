@@ -13,10 +13,10 @@ import static org.junit.Assert.assertEquals;
 
 public class ShowHistoryStatsCommandTest {
     private final PrintStream systemOut = System.out;
-    private ByteArrayOutputStream testOut;
+
     @Before
     public void setUp() {
-        testOut = new ByteArrayOutputStream();
+        ByteArrayOutputStream testOut = new ByteArrayOutputStream();
         System.setOut(new PrintStream(testOut));
     }
     @After

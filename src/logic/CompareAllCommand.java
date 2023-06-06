@@ -15,7 +15,7 @@ public class CompareAllCommand implements Command{
     public void execute() {
         Map<String, Integer> expends = user.getExpences();
         Map<String, Integer> incomes = user.getIncomes();
-        int budget = user.getBudget().getValue();
+        int budget = user.getBudget();
         int incomesSum = 0;
         int expensesSum = 0;
         for(Map.Entry<String, Integer> entry : expends.entrySet()) {

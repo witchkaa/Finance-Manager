@@ -1,9 +1,7 @@
 package logic;
 
-import storage.IntHolder;
 import storage.User;
 import userinterface.UserInterface;
-
 public class MarkIncomeDoneCommand implements Command{
     private final UserInterface userInterface;
     private final User user;
@@ -18,8 +16,8 @@ public class MarkIncomeDoneCommand implements Command{
         String choice = (String)userInterface.askInfo("string");
         if(user.getIncomes().containsKey(choice)) {
             int value = user.getIncomes().get(choice);
-            int oldBudget = user.getBudget().getValue();
-            IntHolder newBudget = new IntHolder(oldBudget + value);
+            int oldBudget = user.getBudget();
+            Integer newBudget = oldBudget + value;
             user.setBudget(newBudget);
             user.getHistory().add(value);
             user.getIncomes().remove(choice);

@@ -52,8 +52,7 @@ public class FileStorageProcessor implements StorageProcessor{
         String name = (String)userInterface.askInfo("word");
         user.setName(name);
         userInterface.showInfo("Nice to meet you, " + name + "! Now enter your start budget: ");
-        Integer budgetInt = (Integer) userInterface.askInfo("int");
-        IntHolder budget = new IntHolder(budgetInt);
+        Integer budget = (Integer) userInterface.askInfo("int");
         user.setBudget(budget);
         user.setExpends(new HashMap<>());
         user.setIncomes(new HashMap<>());
