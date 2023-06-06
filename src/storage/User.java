@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class User implements Serializable {
     private String name;
-    private IntHolder budget;
+    private Integer budget;
     private HashMap<String, Integer> incomes;
     private HashMap<String, Integer> expences;
     private List<Integer> history;
@@ -17,7 +17,7 @@ public class User implements Serializable {
     public void setHistory(List<Integer> history) {
         this.history = history;
     }
-    public IntHolder getBudget() {
+    public Integer getBudget() {
         return budget;
     }
     public Map<String, Integer> getIncomes() {
@@ -35,14 +35,14 @@ public class User implements Serializable {
     public void setExpends(Map<String, Integer> expends) {
         this.expences = (HashMap<String, Integer>) expends;
     }
-    public User(String name, IntHolder budget, Map<String, Integer> incomes, Map<String, Integer> expends) {
+    public User(String name, Integer budget, Map<String, Integer> incomes, Map<String, Integer> expends) {
         this.name = name;
         this.budget = budget;
         this.incomes = (HashMap<String, Integer>) incomes;
         this.expences = (HashMap<String, Integer>) expends;
     }
     public User() {}
-    public void setBudget(IntHolder budget) {
+    public void setBudget(Integer budget) {
         this.budget = budget;
     }
 

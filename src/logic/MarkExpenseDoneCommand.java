@@ -1,9 +1,7 @@
 package logic;
 
-import storage.IntHolder;
 import storage.User;
 import userinterface.UserInterface;
-
 public class MarkExpenseDoneCommand implements Command{
     private final User user;
     private final UserInterface userInterface;
@@ -18,13 +16,12 @@ public class MarkExpenseDoneCommand implements Command{
         String choice = (String)userInterface.askInfo("string");
         if(user.getExpences().containsKey(choice)) {
             int value = user.getExpences().get(choice);
-            int oldBudget = user.getBudget().getValue();
-            IntHolder newBudget = new IntHolder(oldBudget - value);
+            int oldBudget = user.getBudget();
+            Integer newBudget = oldBudget - value;
             user.setBudget(newBudget);
             user.getHistory().add(value * (-1));
             user.getExpences().remove(choice);
             userInterface.showInfo("Marked as done successfully!");
-
         } else {
             userInterface.showInfo("Wrong comment! There is no expense with this comment.");
         }
